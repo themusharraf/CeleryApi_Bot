@@ -15,8 +15,9 @@ def notify_telegram_group():
     response = requests.post(BOT_API, data)
     print(response.status_code, response.json())
 
-
+# celery -A root beat -l info  celery beat uchun command
 # CELERY_BROKER_URL = 'amqp://localhost'            # settings ga qushish kerak rammitq uchun
+# CELERY_BROKER_URL = 'redis://localhost'            # settings ga qushish kerak rammitq uchun
 # docker run --name rabbitmq -p 5672:5672 rabbitmq
 # celery -A root worker -l info
 # celery -A root flower --port=5566

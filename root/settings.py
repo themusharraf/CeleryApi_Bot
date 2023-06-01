@@ -162,7 +162,7 @@ REST_FRAMEWORK = {
     }
 }
 
-CELERY_BROKER_URL = 'amqp://localhost'
+CELERY_BROKER_URL = 'redis://localhost'
 
 # django-storages settings
 # DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
